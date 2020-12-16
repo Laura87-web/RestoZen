@@ -1,0 +1,303 @@
+/*GENERALES*/
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: antiquewhite;    
+}
+
+h1  {    
+    letter-spacing: 2px;
+    margin: 50px; 
+    color: antiquewhite;
+}
+samp{
+    font-size: 1.3cm;
+    font-style: oblique;
+    color: burlywood;
+    text-shadow: 2px 2px 5px gold;
+}
+
+
+input {
+    border-color: rgb(180, 150, 102);
+    border-width: 3px;
+    padding: 9px;
+    text-align: center;
+    background-color: lavender;
+    margin-block-end: 12px;
+    border-radius: 9px;
+}
+.fondo {
+    
+    background-size: cover; /*cubre todo el espacio*/
+    /*background-repeat: no-repeat; si esta attacment no aplica usarlo*/
+    background-attachment: fixed; /*mantiene proporcionales las dimensiones de img*/
+    background-position: center center;
+    opacity: 1;
+
+}
+/*Botones*/
+
+.boton{
+    color: rgb(213, 236, 213);
+    font-size: 18px;
+    text-align: center;
+    border:none;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px 9px;
+}
+
+
+/*ESTRUCTURA: 
+encabezado,pie,tres columnas y barra navegacion*/
+.encabezado {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(17, 16, 16, 0.7);
+    font-size: 30px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.columna {
+    float: left;
+    padding: 10px;
+}
+
+.lateral {
+    /* columnas laterales */
+    width: 25%;
+    display: block;
+    height: 250px;
+}
+
+.medio {
+    /* columna del medio */
+    width: 50%;
+    text-align: center;
+}
+
+.fila:after {
+    /* para disponer las columnas en fila*/
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: rgb(53, 52, 52, 0.5);
+    padding: 15px;
+}
+
+.nav a {
+    display: inline;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+a:link,a:visited {
+    text-decoration: none;
+    color: burlywood;
+    margin-left: 4px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+
+}
+.pagActual{
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+label{
+    color: wheat;
+}
+
+/*---------------------------------------------------------------------*/
+
+/*inicio*/
+
+.f-inicio {
+    background-image: url(../img/platillos.jpg);
+}
+#ingresar{ /*uso el id del tag*/
+    padding: 10px;
+    border-color: antiquewhite;
+    border-style: groove;
+    border-radius: 20px;
+    margin: 10px;
+}
+.boton-negro{
+    background-color: black;
+    color: blanchedalmond;
+}
+
+
+/*------------------*/
+
+/*MOZO*/
+.f-mozo{
+    background-image: url(../img/platillos.jpg);
+}
+.comentarios{
+   height:100px;
+   width: 270px;
+   padding: 3px;
+   border-radius: 5px;
+   resize: none;
+}
+#pedido, #mesa{  
+    padding: 6px;
+    margin: 20px;
+    border-radius: 5px;  
+    font-size: medium;  
+}
+.columna.lateral p{
+    font-size: 20px;
+}
+.boton-verde{
+    background-color: green;
+    color: blanchedalmond;
+    margin-right: 18px;
+}
+.boton-rojo{
+    background-color: red;
+    color: blanchedalmond;
+}
+.espacio-btn{
+    margin-top: 30px;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+/*------------------*/
+/*CAJERO*/
+.f-cajero{
+    background-image: url(../img/barraAntigua.jpg);
+}
+.columna.lateral button{
+    padding: 42px;
+    
+}
+.columna.medio.f-negro{
+    background-color: rgb(0, 0, 0,0.5);
+    padding:50px; 
+    font-size: x-large;   
+}
+.pagina{
+    margin-top: 18px;
+    font-size: medium;
+}
+.columna.lateral.negro{
+    color:black;
+    font-weight: bolder;
+    background-color: rgb(245, 245, 220,0.5);
+    height: 310px;
+    padding-top: 50px;
+}
+/*------------------------*/
+/*BARTENDER*/
+
+.f-bartender{
+    background-image: url(../img/Bebidas.jpg);
+}
+.columna.medio p{
+    font-size: xx-large;
+}
+.lista-pedidos li{
+    padding: 6px;
+    margin-right: 3px;
+    font-size: large;    
+}
+
+.ok{
+    background-color: green;
+    border-radius: 10px;
+    font-size: larger;
+    color: blanchedalmond;
+    cursor: pointer;
+}
+.fila.bar{
+    background-color: rgb(8, 8, 8,0.5);
+}
+/*---------------------------*/
+/*COCINERO*/
+
+.f-cocinero{
+    background-image:url(../img/sartenes.jpg)
+}
+
+/*-------------------------*/
+/*Mesas Cerradas*/
+.f-mesasCerradas{
+    background-image: url(../img/mesas.jpg);
+}
+table {
+    width: 100%;
+    font-size: large;
+    border-collapse: collapse;
+    padding: 10px;
+   
+}
+caption{
+    font-size: x-large;
+    margin:9px;
+}
+ th,td {
+    border: solid 1px gray;
+    padding: 5px;
+}
+th{
+    color: rgb(243, 192, 145);
+    
+}
+tr:nth-child(even) {
+    background-color: rgb(0, 0, 0,0.5);
+  }
+tr:nth-child(odd) {
+   background-color: rgb(0, 0, 0,0.9);
+  }
+
+/*-------------------------*/
+/*Info de Mesa*/
+.f-infomesa{
+    background-image: url(../img/mesas.jpg);
+}
+.encabezado {
+    font-size: 20px;
+    padding: 5px;
+}
+#infomesa{
+    margin: 6px;
+}
+table img {
+    max-width: 100px;
+}
+.cerrar{
+    margin: 20px;
+}
+#fecha-mesa, #hora, #caption {
+    color:black;
+    font-weight: bolder;
+}
+/*------*/
+.oculto{
+    display: none;
+}
+
